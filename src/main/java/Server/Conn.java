@@ -10,7 +10,7 @@ public class Conn {
     public Conn() {
         try {
             Class.forName("com.mysql.cj.jdbc.Driver");
-            c = DriverManager.getConnection("jdbc:mysql://localhost:3306/FoodPile", "devshrm", "3377");
+            c = DriverManager.getConnection("jdbc:mysql://localhost:3306/FoodPile", "", "");
             s = c.createStatement();
             System.out.println("Connected to db");
         } catch (ClassNotFoundException | SQLException e) {
