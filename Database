@@ -1,0 +1,3 @@
+create database Foodpile;
+create table Inventory(name varchar(50), category varchar(50), price int(50), quantity int (50));
+create table account(username varchar(20), name varchar(25), password varchar(25),primary key(username));
